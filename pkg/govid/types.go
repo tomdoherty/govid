@@ -1,5 +1,6 @@
 package govid
 
+// CovidRecord represents individual entry in data file
 type CovidRecord struct {
 	DateRep                                          string `json:"dateRep"`
 	Day                                              string `json:"day"`
@@ -15,6 +16,8 @@ type CovidRecord struct {
 	CumulativeNumberFor14DaysOfCOVID19CasesPer100000 string `json:"Cumulative_number_for_14_days_of_COVID-19_cases_per_100000"`
 }
 
+
+// CovidRecords is an array of CovidRecord
 type CovidRecords struct {
 	Records []struct {
 		CovidRecord
