@@ -9,10 +9,9 @@ before:
 builds:
   - env:
       - CGO_ENABLED=0
-    dir: .
+    dir: cmd/govid
     goos:
       - linux
-      - windows
       - darwin
 archives:
   - replacements:
