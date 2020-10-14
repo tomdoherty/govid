@@ -1,9 +1,5 @@
 #!/bin/bash
 
-go vet \
-    ./cmd/* \
-    ./pkg/*
+go vet . ./cmd
 
-golint \
-    ./cmd/* \
-    ./pkg/*
+golint . ./cmd
