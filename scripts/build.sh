@@ -1,4 +1,3 @@
 #!/bin/bash
 
-go build \
-    ./cmd/govid
+go build -o govid cmd/main.go
