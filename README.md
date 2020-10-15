@@ -1,7 +1,8 @@
 # govid
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/tomdoherty/govid)](https://goreportcard.com/report/github.com/tomdoherty/govid)
-[![Go Actions Status](https://github.com/tomdoherty/govid/workflows/Go/badge.svg)](https://github.com/tomdoherty/govid/actions)
+[![](https://goreportcard.com/badge/github.com/tomdoherty/govid)](https://goreportcard.com/report/github.com/tomdoherty/govid)
+[![](https://img.shields.io/github/release/tomdoherty/govid.svg)](https://github.com/tomdoherty/govid/releases/latest)
+[![](https://github.com/tomdoherty/govid/workflows/Go/badge.svg)](https://github.com/tomdoherty/govid/actions)
 
 ## dump covid stats into docker mysql database
 
@@ -23,8 +24,7 @@ EOF
 
 ```shell
 curl -sL https://opendata.ecdc.europa.eu/covid19/casedistribution/json >covid.json
-
-go build -o govid cmd/main.go
-./govid
+go get github.com/tomdoherty/govid/cmd/govid
+./govid <covid.json
 
 ```
