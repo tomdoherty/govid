@@ -13,9 +13,12 @@ builds:
     binary: govid
     goos:
       - linux
+      - darwin 
+    goarch:
+      - amd64
 archives:
   - format: binary
-    name_template: "{{ .Binary }}"
+    name_template: "{{ .Binary }}_{{ .Os }}"
 checksum:
   name_template: 'checksums.txt'
 snapshot:
