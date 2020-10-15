@@ -9,18 +9,10 @@ before:
 builds:
   - env:
       - CGO_ENABLED=0
-    dir: cmd/govid
+    main: ./cmd/govid/govid.go
+    binary: govid
     goos:
       - linux
-      - darwin
-archives:
-  - replacements:
-      darwin: Darwin
-      linux: Linux
-      windows: Windows
-      386: i386
-      amd64: x86_64
-    format: binary
 checksum:
   name_template: 'checksums.txt'
 snapshot:

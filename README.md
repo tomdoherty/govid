@@ -1,5 +1,7 @@
 # govid
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/tomdoherty/govid)](https://goreportcard.com/report/github.com/tomdoherty/govid)
+[![Go Actions Status](https://github.com/tomdoherty/govid/workflows/Go/badge.svg)](https://github.com/tomdoherty/govid/actions)
 
 ## dump covid stats into docker mysql database
 
